@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8" />
+
+	<title>Headcount VMS Volunteer Form</title>
+
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+	<meta name="description" content="HeadCount VMS Volunteer Form" />
+
+	<link href="{{ url_for('static', path='styles.css') }}" rel="stylesheet">
+
+	<link rel="icon" href="favicon.png">
+
+</head>
+
+<body>
+
+	<h1>Headcount VMS Volunteer Form</h1>
+
+   
+	<form method="post">
+		<label for="name">name:</label>
+		<input type="text" id="name" name="name">
+		<br>
+		<input type="radio" id="male" name="gender" value="0">
+		<label for="male">male</label>
+		<input type="radio" id="female" name="gender" value="1">
+		<label for="female">female</label>
+		<br>
+		<label for="address">address:</label>
+		<input type="text" id="address" name="address">
+		<br>
+		<label for="town">town/zip:</label>
+		<input type="text" id="town" name="town">
+		<br>
+
+		<label for="phone">phone:</label>
+		<input type="text" id="phone" name="phone">
+		<br>
+
+
+		<label for="email">email:</label>
+		<input type="text" id="email" name="email">
+		<br>
+
+		<input type="radio" id="caucasian" name="ethnicity" value="0">
+		<label for="ethnicity">caucasian</label>
+		<input type="radio" id="hispanic" name="ethnicity" value="1">
+		<label for="ethnicity">hispanic</label>
+		<input type="radio" id="black" name="ethnicity" value="2">
+		<label for="ethnicity">black</label>
+		<input type="radio" id="asian" name="ethnicity" value="3">
+		<label for="ethnicity">asian</label>
+		<input type="radio" id="other" name="ethnicity" value="4">
+		<label for="ethnicity">other</label>
+		<br>
+		<input type="checkbox" id="clinical" name="isClin" value="Yes">
+		<label for="isClin">clinical (with staff supervision)</label>
+		<br>
+		<input type="submit" value="submit">
+
+
+
+
+
+
+	</form>
+
+</body>
+
+</html>
